@@ -7,7 +7,6 @@ outputCrudeFile=challengeCrudeOutput
 outputFinalFile=challengeFinalOutput
 
 # Calc total lines to get in RANDOM (divid total bytes by UID Size plus a line break)
-uidLineSize=$(expr $uidSize + 1)
 totalLines=$(expr $maxFileSize / $(expr $uidSize + 1) )
 
 # Generate a Random UID list with 15 ALPHANUMERIC characters
